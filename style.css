@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  
+}
+html {
+  height: 100%;
+  width: 100%;
+  
+}
+body {
+  background-color: black;
+}
+
+nav {  
+  padding: 20px;
+  font-family: 'Handjet', cursive;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+}
+
+main {
+  padding: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+  display: flex;
+  background-color: white;
+  height:500px;
+  flex-direction: column;  /* make main axis vertical */
+  justify-content: center;
+}
+@media all and (min-width: 1100px){
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .late {
+        position: relative;
+        top:39%;
+    }
+}
+@media all and (max-width: 1100px){
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .late {
+        position: relative;
+        top:39%;
+    }
+}
+@media all and (max-width: 740px){
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+section {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+  color: white;
+  min-height:1000px;
+  height:auto;
+}
+footer {
+  padding: 20px;
+  background-color: black;
+  font-family: "poppins";
+}
+.contact-btn {
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: black;
+  border: none;
+  height:50px;
+  width: 100px;
+  color:white;
+}
+.post {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background-color: white;
+  max-width: 350px;
+  height: 350px;
+  color:black;
+  transition: all 1s;
+} .post:hover {
+  transform: scale(1.1);
+}
+
+.alb{
+  height:350px;
+  width:350px;
+  background-color: transparent;
+}
+.grid {
+    /* posts*/
+    height: 100%;
+    display: grid;
+    grid-gap: 15px;
+}
+.alb {
+    /* posts*/
+    max-width: 350px;
+    max-height: 350px;
+    margin: auto;
+    display: flex;
+    text-align: left;
+    align-items: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.alb p , h2 , span {
+    width: fit-content;
+}
+.alb1 {
+    /* posts*/
+    width: 550px;
+    margin: auto;
+    display: flex;
+    text-align: left;
+    align-items: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.alb1 p , h2 , span {
+    width: fit-content;
+}
+.img_responsive {
+    width: 350px;
+    height: 350px;
+    background-color:black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
